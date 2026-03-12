@@ -1,5 +1,5 @@
 // IMPORTS - React Router for navigation and CSS for styling
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { Routes, Route } from 'react-router-dom'
 import './App.css'
 import Navbar from '../components/navbar'      // Navigation bar component
 import Homepage from '../components/Homepage'  // Landing page component
@@ -12,7 +12,7 @@ import { Toaster } from 'react-hot-toast' // Toast notifications
 function App() {
   return (
     // BrowserRouter - Enables client-side routing for the entire app
-    <BrowserRouter>
+    <Routes>
       {/* NAVIGATION BAR - Fixed header with navigation links */}
       <Navbar />
       
@@ -64,7 +64,7 @@ function App() {
           }
         }}
       />
-    </BrowserRouter>
+    </Routes>
   )
 }
 
